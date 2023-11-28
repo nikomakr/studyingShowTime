@@ -9,8 +9,16 @@ A group of film students came in contact with front-end students. They want to r
 
 ### Acceptance Criteria: 
 
-[It will be updated by Chiamaka]
-[These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called scenario-oriented criteria which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of challenges.]
+* A responsive and functional website (mobile and desktop version).
+* This is done when we can select movie based on year of production/released date.
+* This is done when we can select movie based on the main actor.
+* Home page should display an appealing layout with current, new and different genres.
+* Movies should be listed with year relaesed, actoer name and brief description of the movie.
+* User should be able to click on a movie to view more details of the movie.
+* User should be able to search for movies using keywords, actors, titles and released/production dates.
+* User needs to sign in to access movies.
+
+[These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we've used a common format called scenario-oriented criteria which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of challenges.]
 
 ### Mock-up: 
 [It will be updated by Chiamaka with Figma and screenshots from there]
