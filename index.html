@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Movie Bot</title>
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   </head>
@@ -15,16 +15,20 @@
   <!-- Navbar content -->
   <!-- Container wrapper -->
  <div class="container rounded-top rounded-bottom">
-  <!-- Navbar brand -->
-  <a class="navbar-brand me-2" href="https://mdbgo.com/">
-    <img
-      src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-      height="16"
-      alt="MDB Logo"
-      loading="lazy"
-      style="margin-top: -1px;"
-    />
-  </a>
+  <div class="navbar-brand me-lg-3">
+<!-- Navbar brand -->
+<a class="">
+  <img
+    src="./Assets/Image/Logo.png"
+    height="20"
+    width="25"
+    alt="MDB Logo"
+    loading="lazy"
+    style="margin-top: -1px;"
+  />
+</a>
+  </div>
+  
 
   <!-- Collapsible wrapper -->
   <div class="collapse navbar-collapse" id="navbarButtonsExample">
@@ -40,12 +44,8 @@
     <!-- Left links -->
 
     <div class="d-flex align-items-center">
-      <button data-mdb-ripple-init type="button" class="btn btn-secondary bg-secondary px-3 me-2">
-        Login
-      </button>
-      <button data-mdb-ripple-init type="button" class="btn btn-secondary me-3">
-        Sign up for free
-      </button>
+      <button type="button" class="btn btn-secondary bg-secondary px-3 me-2 "><a href="./login.html">Login</a></button>
+      <button type="button" class="btn btn-secondary me-3"><a href="./signup.html">Sign up for free</a></button>
       <!-- Notifications -->
       <i class="bi bi-bell-fill"></i>
         <span class="badge rounded-pill badge-notification bg-danger">1</span>
@@ -57,12 +57,11 @@
 <!-- Container wrapper -->
 </nav>
 </header>
-
 <!-- Hero image-->
 <section>
 
 </section>
  
-    <script type="text/javascript" src="./Assets/script.js"></script>
+    <script type="text/javascript" src="./Assets/Java/script.js"></script>
   </body>
 </html>
