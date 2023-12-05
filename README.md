@@ -52,18 +52,18 @@ The above two are the two main goals we are looking forward to achieving.
 
 ### Credits
 
-* Collaborators:
+Collaborators:
 - Schola D-Sholaakambi https://github.com/d-sholaakanbi
 - Chiamaka Lilian Amadi https://github.com/clamadi
 - Ali Sheikh https://github.com/mirpur33
 - Nikolaos Makridis https://github.com/nikomakr
 
 From time to time we learnt coding, asked questions about coding and we 've told ways to deal with aspects of this project and not only from edX's - 2U employees:
-> Omar Patel (Teacher Engineer)
-> Riz (TA)
-> Juno (TA)
-> Ryan S (TA)
-> Phil Loy (Tutor)
+* Omar Patel (Teacher Engineer)
+* Riz (TA)
+* Juno (TA)
+* Ryan S (TA)
+* Phil Loy (Tutor)
 
 As a student of edX - Skills for life - skills bootcamps here: https://skillsforlife.edx.org and precisely Front-End developer / Web Development course I reference any code you might see as a copy or partially copy or influenced by the repo here: https://git.bootcampcontent.com/uk-edx-16-week/UK-VIRT-FE-PT-09-2023-U-LOLC.git
 
@@ -118,12 +118,12 @@ SOFTWARE.
 
 ### Additional potential features:
 
-Users need to sign in to access movies
-Users can create an account by form of registration 
-Users can create an account by linking their Gmail account
-Notification button
-User account button
-User account profile page
+1) Users need to sign in to access movies
+2) Users can create an account by form of registration 
+3) Users can create an account by linking their Gmail account
+4) Notification button
+5) User account button
+6) User account profile page
 
 ## Server side APIs used:
 
