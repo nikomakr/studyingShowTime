@@ -4,68 +4,72 @@
 
 That's part of our student work as students of edX - Skills for Life. It's the project1, which is mandatory collaborative work with 3-4 students in total. We need to conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests.
 
+## Overview
+
+A team of student Front-End Engineers, CANS, had a brainstorming session on 22nd November which led to the idea of developing a new product. During that session we identified some problems, which made it ideal to further examine the chance to create a solution for those problems. 
+
+Film students wants to access a website, which contains live-streaming of movies, films, series. Also, it is expected to have more than usual basic information compared to live-streaming providers. On the top of it they are willing to use advanced search keywords, sorting, filtering and segmenting data. Lastly relevant view to be created either by default or after playing with the data.
+
+## Problem: 
+
+live streaming providers having limited options to filter, sort, search. Also, some views’ answers are limited to one live-streaming company. For instance top10 series/movies per country & etc from one data source. The above problem led us to identifying the opportunity for the market. So, we decided to collaborate with university film studies students who use all live-streaming providers extensively and many other websites where they can obtain film, movies, series and other relevant information.
+
+We conducted on 23rd November a market research to validate that gap in the market by researching top companies like Netflix, Amazon Video, Apple TV, etc. We analysed the competitors and we found grounds to believe our solution will solve the problem(s) of our niche audience of film students.
+
+All the above led us on drafting the MVP, minimum viable product.
+
 ### User Story: 
-A group of film students came in contact with front-end students. They want to receive a help by front-end students so they can have a brand new website, where they can retrieve relevant information to their needs. [It will be added more content here by Niko]
+
+Users want to check on mobile phones one service provider (website) and obtain all the knowledge they are looking for. Also, they would like to be able to watch what they are looking for by searching with advanced criteria.
+
+There are two layers of search - value proposition:
+1) Informative aggregated data such as year of production, released date and further details, which cannot be found all together in one website.
+2) Find a trailer and be able to choose on where to watch the movie/series (cost efficient)
+The above two are the two main goals we are looking forward to achieving.
 
 ### Acceptance Criteria: 
 
-* A responsive and functional website (mobile and desktop version).
-* This is done when we can select movie based on year of production/released date.
-* This is done when we can select movie based on the main actor.
-* Home page should display an appealing layout with current, new and different genres.
-* Movies should be listed with year relaesed, actoer name and brief description of the movie.
-* User should be able to click on a movie to view more details of the movie.
-* User should be able to search for movies using keywords, actors, titles and released/production dates.
-* User needs to sign in to access movies.
+1) A responsive and functional website (mobile and desktop version).
+2) Search a movie, film, series based on year of production, release date.
+3) Select movie, film, series based on the main actor.
+4) Home page should display an appealing layout with current, new and different genres.
+5) Movies should be listed with year released, actors’ name and brief movie description.
+6) Users should be able to click on a movie to view more details of the movie.
+7) Users should be able to search for movies using keywords such as titles and released/production dates.
 
-[These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we've used a common format called scenario-oriented criteria which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of challenges.]
+### General mandatory requirements:
 
-### Mock-up: 
-[It will be updated by Chiamaka with Figma and screenshots from there]
-[This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.]
+- [] Use Bootstrap
+- [] Be deployed to GitHub Pages.
+- [] Be interactive (i.e., accept and respond to user input).
+- [] Use at least two [server-side APIs]
+- [x] Does not use alerts, confirms, or prompts (use modals).
+- [] Use client-side storage to store persistent data.
+- [x] Be responsive.
+- [] Have a polished UI.
+- [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+- [x] Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-## Table of Contents (Optional)
+### Credits
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-[It will be updated later by Niko:]
-[What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.]
-
-## Usage
-
-[It will be updated later by Niko:]
-[Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```]
-
-## Credits
-
-Collaborators:
-Schola D-Sholaakambi https://github.com/d-sholaakanbi
-Chiamaka Lilian Amadi https://github.com/clamadi
-Ali Sheikh https://github.com/mirpur33
-Nikolaos Makridis https://github.com/nikomakr
+* Collaborators:
+- Schola D-Sholaakambi https://github.com/d-sholaakanbi
+- Chiamaka Lilian Amadi https://github.com/clamadi
+- Ali Sheikh https://github.com/mirpur33
+- Nikolaos Makridis https://github.com/nikomakr
 
 From time to time we learnt coding, asked questions about coding and we 've told ways to deal with aspects of this project and not only from edX's - 2U employees:
-Omar Patel (Teacher Engineer)
-Riz (TA)
-Juno (TA)
-Ryan (TA)
+> Omar Patel (Teacher Engineer)
+> Riz (TA)
+> Juno (TA)
+> Ryan S (TA)
+> Phil Loy (Tutor)
 
 As a student of edX - Skills for life - skills bootcamps here: https://skillsforlife.edx.org and precisely Front-End developer / Web Development course I reference any code you might see as a copy or partially copy or influenced by the repo here: https://git.bootcampcontent.com/uk-edx-16-week/UK-VIRT-FE-PT-09-2023-U-LOLC.git
 
 The navbar code was sourced from https://mdbootstrap.com/docs/standard/navigation/navbar/
 
-## License
+### License
 
 MIT License
 
@@ -89,7 +93,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Badges
+### Badges
 
 <br>
 ![GitHub all releases](https://img.shields.io/github/downloads/nikomakr/Module1Challenge/total)
@@ -99,16 +103,29 @@ SOFTWARE.
 ![GitHub Repo stars](https://img.shields.io/github/stars/nikomakr/Module1Challenge?style=social)
 <br>
 
-## Features
+## Core Features:
 
-[It will be updated later by Niko:]
-[Here we will have list of features.]
+1) Navigation bar 
+2) Search box 
+3) Advanced search options (search by actor, release date, etc)
+4) Advance / Niche filtering / sorting features 
+5) Movies news (current, new, upcoming)
+6) History button
+7) Home button
+8) Sandwich button
+9) View movie trailer button/Page
+10) Trending views (most popular) in whole industry (not limited to one provider)
 
-## How to Contribute
+### Additional potential features:
 
-Message to all software engineers and not only out there:
-If yoou think, the code can be developed and grow in other directions please feel free to contribute to our work.
+Users need to sign in to access movies
+Users can create an account by form of registration 
+Users can create an account by linking their Gmail account
+Notification button
+User account button
+User account profile page
 
-## Tests
+## Server side APIs used:
 
-[I am not sure if we need this one. We suppose to include examples on how we can test what we developed]
+* Imdb Api documentation: https://developer.imdb.com/documentation/api-documentation/?ref_=/documentation/_PAGE_BODY
+* Utelly Api documentation: https://rapidapi.com/utelly/api/utelly
