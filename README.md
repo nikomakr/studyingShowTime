@@ -39,7 +39,7 @@ The above two are the two main goals we are looking forward to achieving.
 
 ### General mandatory requirements:
 
-- [] Use Bootstrap
+- [x] Use Bootstrap
 - [] Be deployed to GitHub Pages.
 - [] Be interactive (i.e., accept and respond to user input).
 - [] Use at least two [server-side APIs]
@@ -68,6 +68,8 @@ From time to time we learnt coding, asked questions about coding and we 've told
 As a student of edX - Skills for life - skills bootcamps here: https://skillsforlife.edx.org and precisely Front-End developer / Web Development course I reference any code you might see as a copy or partially copy or influenced by the repo here: https://git.bootcampcontent.com/uk-edx-16-week/UK-VIRT-FE-PT-09-2023-U-LOLC.git
 
 The navbar code was sourced from https://mdbootstrap.com/docs/standard/navigation/navbar/
+
+Signup page sourced from https://getbootstrap.com/docs/5.3/forms/floating-labels/
 
 ### License
 
