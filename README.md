@@ -98,11 +98,11 @@ SOFTWARE.
 ### Badges
 
 <br>
-![GitHub all releases](https://img.shields.io/github/downloads/nikomakr/Module1Challenge/total)
-![GitHub language count](https://img.shields.io/github/languages/count/nikomakr/Module1Challenge)
-![GitHub top language](https://img.shields.io/github/languages/top/nikomakr/Module1Challenge?color=yellow)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/nikomakr/Module1Challenge)
-![GitHub Repo stars](https://img.shields.io/github/stars/nikomakr/Module1Challenge?style=social)
+![GitHub all releases](https://img.shields.io/github/downloads/nikomakr/studyingShowTime/total)
+![GitHub language count](https://img.shields.io/github/languages/count/nikomakr/studyingShowTime)
+![GitHub top language](https://img.shields.io/github/languages/top/nikomakr/studyingShowTime?color=yellow)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/nikomakr/studyingShowTime)
+![GitHub Repo stars](https://img.shields.io/github/stars/nikomakr/studyingShowTime?style=social)
 <br>
 
 ## Core Features:
