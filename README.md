@@ -50,6 +50,33 @@ The above two are the two main goals we are looking forward to achieving.
 - [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 - [x] Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
+## Core Features:
+
+1) Navigation bar 
+2) Search box 
+3) Advanced search options (search by actor, release date, etc)
+4) Advance / Niche filtering / sorting features 
+5) Movies news (current, new, upcoming)
+6) History button
+7) Home button
+8) Sandwich button
+9) View movie trailer button/Page
+10) Trending views (most popular) in whole industry (not limited to one provider)
+
+### Additional potential features:
+
+1) Users need to sign in to access movies
+2) Users can create an account by form of registration 
+3) Users can create an account by linking their Gmail account
+4) Notification button
+5) User account button
+6) User account profile page
+
+## Server side APIs used:
+
+* Imdb Api documentation: https://developer.imdb.com/documentation/api-documentation/?ref_=/documentation/_PAGE_BODY
+* Utelly Api documentation: https://rapidapi.com/utelly/api/utelly
+
 ### Credits
 
 Collaborators:
@@ -104,30 +131,3 @@ SOFTWARE.
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/nikomakr/studyingShowTime)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nikomakr/studyingShowTime?style=social)
 <br>
-
-## Core Features:
-
-1) Navigation bar 
-2) Search box 
-3) Advanced search options (search by actor, release date, etc)
-4) Advance / Niche filtering / sorting features 
-5) Movies news (current, new, upcoming)
-6) History button
-7) Home button
-8) Sandwich button
-9) View movie trailer button/Page
-10) Trending views (most popular) in whole industry (not limited to one provider)
-
-### Additional potential features:
-
-1) Users need to sign in to access movies
-2) Users can create an account by form of registration 
-3) Users can create an account by linking their Gmail account
-4) Notification button
-5) User account button
-6) User account profile page
-
-## Server side APIs used:
-
-* Imdb Api documentation: https://developer.imdb.com/documentation/api-documentation/?ref_=/documentation/_PAGE_BODY
-* Utelly Api documentation: https://rapidapi.com/utelly/api/utelly
