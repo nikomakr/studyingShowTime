@@ -1,7 +1,36 @@
 * {
-    background-color:bisque;
+    background-color:rgb(48, 35, 19);
     padding: 0;
     margin: 0;
     }
 
-    
+    /*==Released date=========*/
+    #Released{
+        max-width: 1300px;
+        margin: 30px auto;
+        width: 100%;
+    }
+    .Released-heading{
+        width: 100%;
+        padding: 10px 20px;
+        background-color: rgb(48, 35, 19);
+        border: 1px solid rgb(48, 35, 19);;
+    }
+    .dropdown-item{
+        color:#dadada;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .movie-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .movie-box{
+        width: 300px;
+        height: 500px;
+        overflow: hidden;
+        background-color:  rgb(48, 35, 19);
+        border: 1px solid  rgb(48, 35, 19);
+    }
