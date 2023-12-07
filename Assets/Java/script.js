@@ -52,6 +52,66 @@ searchForm.addEventListener("submit", function (event) {
   //   imdbApi();
   fetchStreamingApi();
 });
+
+
+var movies = [
+  { title: "Movie 1", poster: "path/to/movie1-poster.jpg" },
+  { title: "Movie 2", poster: "path/to/movie2-poster.jpg" },
+  { title: "Movie 3", poster: "path/to/movie3-poster.jpg" },
+  { title: "Movie 4", poster: "path/to/movie3-poster.jpg" }
+  
+];
+
+// Function to create movie card HTML
+function createMovieCard(movie) {
+  return `
+    <div class="movie-box card">
+      <img src="${movie.poster}" class="card-img-top" alt="${movie.title} Poster">
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Watch Now</a>
+      </div>
+    </div>
+  `;
+}
+
+ // Function to append movie cards to a container
+ function appendMovieCards(containerId, moviesArray) {
+  var divContainer = $("#" + containerId);
+  moviesArray.forEach(function (movie) {
+    var cardHtml = createMovieCard(movie);
+    divContainer.append(cardHtml);
+  });
+}
+
+// Append movie cards to respective sections
+appendMovieCards("movieCards", movies);
+appendMovieCards("actorCards", movies); 
+appendMovieCards("genreCards", movies);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // async function imdbApi() {
 //   const imdbUrl =
 //     "https://imdb188.p.rapidapi.com/api/v1/searchIMDB?query=" +

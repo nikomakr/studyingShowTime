@@ -34,13 +34,13 @@
 
 
       
-    .movie-box{
-        /* width: 230px;
-        height: 96px; */
+    /* .movie-box{
+        width: 230px;
+        height: 96px;
     
 
                 
-    }
+    } */
 body {
 	font-size:12px;
 	line-height:1.3;
@@ -246,8 +246,8 @@ h1#logo a {
 #main {
 	border-bottom:1px dashed #413e3e;
 }
-#content {
-}
+/* #content {
+} */
 .box {
 	width:980px;
 	border-bottom:1px dashed #413e3e;
