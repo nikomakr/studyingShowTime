@@ -76,21 +76,63 @@ function createMovieCard(movie) {
 
  // Function to append movie cards to a container
  function appendMovieCards(containerId, moviesArray) {
-  var divContainer = $("#" + containerId);
+  var container = $("#" + containerId);
   moviesArray.forEach(function (movie) {
     var cardHtml = createMovieCard(movie);
-    divContainer.append(cardHtml);
+    container.append(cardHtml);
   });
 }
 
 // Append movie cards to respective sections
 appendMovieCards("movieCards", movies);
-appendMovieCards("actorCards", movies); 
+appendMovieCards("actorsCards", movies); 
 appendMovieCards("genreCards", movies);
 
+// Call fetchMoviesMiniApi for each movie and update the card data
+fetchMoviesMiniApi(movies, function (castData) {
+  // Update the movie card with cast information
+  updateMovieCard(containerId, movies.title, castData);
+});
 
+// Function to update movie card with cast information
+function updateMovieCard(containerId, movieTitle, castData) {
+var container = $("#" + containerId);
+var movieCard = container.find(`[alt="${movieTitle} Poster"]`).closest('.movie-box');
 
+// Add cast information to the movie card
+var castList = castData.map(actor => actor.name).join(', ');
+var castInfo = `<p><strong>Cast:</strong> ${castList}</p>`;
+movieCard.find('.card-body').append(castInfo);
+}
 
+// Append movie cards to respective sections
+appendMovieCards("movieCards", movies);
+// Update the container ID for actors
+appendMovieCards("actorsCards", movies);
+appendMovieCards("genreCards", movies);
+
+// ...
+
+// Modify the fetchMoviesMiniApi function to accept a callback function
+async function fetchMoviesMiniApi(movie, callback) {
+const moviesMiniUrl =
+"https://moviesminidatabase.p.rapidapi.com/movie/id/" + movie.imdbId + "/cast/";
+const moviesMiniOptions = {
+method: "GET",
+headers: {
+  "X-RapidAPI-Key": "d707f85ea2msh17d19e6e6585a85p16d8c0jsn733b15f6fe05",
+  "X-RapidAPI-Host": "moviesminidatabase.p.rapidapi.com",
+},
+};
+
+try {
+const response = await fetch(moviesMiniUrl, moviesMiniOptions);
+const data = await response.json();
+callback(data); // Call the callback function with the cast data
+} catch (error) {
+console.error(error);
+}
+}
 
 
 
