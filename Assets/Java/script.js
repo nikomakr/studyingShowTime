@@ -52,6 +52,28 @@ searchForm.addEventListener("submit", function (event) {
   //   imdbApi();
   fetchStreamingApi();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // async function imdbApi() {
 //   const imdbUrl =
 //     "https://imdb188.p.rapidapi.com/api/v1/searchIMDB?query=" +

@@ -27,16 +27,15 @@
         justify-content: center;
         align-items: center;
         /* margin: 20px 0px; */
-        width: 300px;
-        height: 300px;
+        gap: 20px;
 
     }
 
 
       
     .movie-box{
-        /* width: 230px;
-        height: 96px; */
+        width: 230px;
+        height: 96px;
     
 
                 
@@ -246,8 +245,8 @@ h1#logo a {
 #main {
 	border-bottom:1px dashed #413e3e;
 }
-#content {
-}
+/* #content {
+} */
 .box {
 	width:980px;
 	border-bottom:1px dashed #413e3e;
