@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="./Assets/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--Adding another library for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .btn {
+background-color: none;
+border: none;
+color: rgba(245, 245, 245, 0.925);
+padding: 12px 20px;
+font-size: 24px;
+cursor: pointer; }
+    
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: RoyalBlue;
+    }
+    </style>
+  
   </head>
   <body>
     <header>
@@ -22,8 +39,7 @@
   <img
     src="./Assets/Image/Logo only S without carrots.png"
     height="35"
-    width="45"
-    alt="MDB Logo"
+    width="55"
     loading="lazy"
     style="margin-top: -1px;"
   />
@@ -55,10 +71,12 @@
     </a>
 
     <div class="d-flex align-items-center">
-      <button type="button" class="btn btn-secondary me-2">Profile</button>
-      <button type="button" class="btn btn-secondary me-2">Home</a></button>
-      <button type="button" class="btn btn-secondary me-2">Playlist</a></button>
-      <button type="button" class="btn btn-secondary me-2">History</a></button>
+      <button class="btn"><i class="fa fa-bars"></i></button>
+      <button class="btn"><i class="fa fa-home"></i></button>
+      <button class="btn"><i class="fa fa-folder"></i></button>
+      <button class="btn"><i class="fa fa-history"></i></button>
+
+     
       <!-- Notifications -->
       <i class="bi bi-bell-fill"></i>
         <span class="badge rounded-pill badge-notification bg-danger">1</span>
@@ -70,11 +88,6 @@
 <!-- Container wrapper -->
 </nav>
 </header>
-<!-- Hero image-->
-<section>
-
-
-</section>
 <!--Released date -->
 <section id="Released">
   <!--dropdown------->
@@ -252,3 +265,9 @@
 
 </body>
 </html>
+</section>
+ 
+    <script type="text/javascript" src="./Assets/Java/script.js"></script>
+  </body>
+</html>
+
