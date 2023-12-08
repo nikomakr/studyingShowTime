@@ -2,7 +2,7 @@
 <html lang="en-gb">
   <head>
     <meta charset="utf-8">
-    <title>Movie Bot</title>
+    <title>Search Page</title>
     <link rel="stylesheet" href="./Assets/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -34,11 +34,12 @@ cursor: pointer; }
  <div class="container rounded-top rounded-bottom">
   <div class="navbar-brand me-lg-3">
 <!-- Navbar brand -->
-<a class="">
+<a href="./index.html">
   <img
     src="./Assets/Image/Logo only S without carrots.png"
     height="35"
-    width="55"
+    width="45"
+    alt="MDB Logo"
     loading="lazy"
     style="margin-top: -1px;"
   />
@@ -59,27 +60,21 @@ cursor: pointer; }
     </ul>
     <!-- Left links -->
 
-    <a class="">
-      <img
-        src="./Assets/Image/Brand Name without since.png"
-        height="35"
-        width="255"
-        loading="lazy"
-        style="margin-top: -1px;"
-      />
-    </a>
+    <a href="./index.html"><img 
+      src="./Assets/Image/Brand Name without since.png"
+      height="35"
+      width="255"
+      loading="lazy"
+      style="margin-top: -1px;"
+    /></a>
+      
 
     <div class="d-flex align-items-center">
+        <button class="btn"><i class="fa fa-filter"></i></button>
       <button class="btn"><i class="fa fa-bars"></i></button>
       <button class="btn"><i class="fa fa-home"></i></button>
-      <button class="btn"><i class="fa fa-folder"></i></button>
       <button class="btn"><i class="fa fa-history"></i></button>
 
-     
-      <!-- Notifications -->
-      <i class="bi bi-bell-fill"></i>
-        <span class="badge rounded-pill badge-notification bg-danger">1</span>
-      </a>
     </div>
   </div>
   <!-- Collapsible wrapper -->
@@ -89,7 +84,47 @@ cursor: pointer; }
 </header>
 <!-- Hero image-->
 <section>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
 
+      <!--movie-box------>
+
+      <div class="movie-box card">
+        <img src="path/to/movie-poster.jpg" class="card-img-top" alt="Movie Poster">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Watch Now</a>
+        </div>
+        <!--movie-box------>
+
+      <div class="movie-box card">
+        <img src="path/to/movie-poster.jpg" class="card-img-top" alt="Movie Poster">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Watch Now</a>
+        </div>
+
+        <!--movie-box------>
+
+      <div class="movie-box card">
+        <img src="path/to/movie-poster.jpg" class="card-img-top" alt="Movie Poster">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Watch Now</a>
+        </div>
+
+        <!--movie-box------>
+
+      <div class="movie-box card">
+        <img src="path/to/movie-poster.jpg" class="card-img-top" alt="Movie Poster">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Watch Now</a>
+        </div>
+        
 </section>
  
     <script type="text/javascript" src="./Assets/Java/script.js"></script>

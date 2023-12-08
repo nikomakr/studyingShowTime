@@ -40,13 +40,13 @@ The above two are the two main goals we are looking forward to achieving.
 ### General mandatory requirements:
 
 - [x] Use Bootstrap
-- [] Be deployed to GitHub Pages.
+- [x] Be deployed to GitHub Pages.
 - [] Be interactive (i.e., accept and respond to user input).
 - [] Use at least two [server-side APIs]
 - [x] Does not use alerts, confirms, or prompts (use modals).
-- [] Use client-side storage to store persistent data.
-- [x] Be responsive.
-- [] Have a polished UI.
+- [x] Use client-side storage to store persistent data.
+- [] Be responsive.
+- [x] Have a polished UI.
 - [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 - [x] Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
@@ -125,9 +125,11 @@ SOFTWARE.
 ### Badges
 
 <br>
+
 ![GitHub all releases](https://img.shields.io/github/downloads/nikomakr/studyingShowTime/total)
 ![GitHub language count](https://img.shields.io/github/languages/count/nikomakr/studyingShowTime)
 ![GitHub top language](https://img.shields.io/github/languages/top/nikomakr/studyingShowTime?color=yellow)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/nikomakr/studyingShowTime)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nikomakr/studyingShowTime?style=social)
+
 <br>

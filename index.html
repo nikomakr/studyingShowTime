@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Bot</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--Adding another library for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .btn {
+background-color: none;
+border: none;
+color: rgba(245, 245, 245, 0.925);
+padding: 12px 20px;
+font-size: 24px;
+cursor: pointer; }
+    
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: RoyalBlue;
+    }
+    </style>
+  
+  </head>
+  <body>
+    <header>
+  <!-- Navbar -->
+  <!--//Edited and styled navbar code sourced from https://mdbootstrap.com/docs/standard/navigation/navbar -->
+<nav class="navbar bg-warning border-bottom navbar-expand-lg rounded-top rounded-bottom" data-bs-theme="light" >
+  <!-- Navbar content -->
+  <!-- Container wrapper -->
+ <div class="container rounded-top rounded-bottom">
+  <div class="navbar-brand me-lg-3">
+<!-- Navbar brand -->
+<a href="#">
+  <img
+    src="./Assets/Image/Logo only S without carrots.png"
+    height="35"
+    width="55"
+    loading="lazy"
+    style="margin-top: -1px;"
+  />
+</a>
+  </div>
+  
+
+  <!-- Collapsible wrapper -->
+  <div class="collapse navbar-collapse" id="navbarButtonsExample">
+    <!-- Left links -->
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <form  class="d-flex" role="search" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchedMovie">
+
+          <button id="submit"   class="btn btn-outline-success bg-dark" type="submit" id="submit" ><a href="./searchPage.html"</a>Search</button>
+        </form>      
+      </li>
+    </ul>
+    <!-- Left links -->
+
+    <a class="">
+      <img
+        src="./Assets/Image/Brand Name without since.png"
+        height="35"
+        width="255"
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
+
+    <div class="d-flex align-items-center">
+      <button class="btn"><i class="fa fa-bars"></i></button>
+      <button class="btn"><i class="fa fa-home"></i></button>
+      <button class="btn"><i class="fa fa-folder"></i></button>
+      <button class="btn"><i class="fa fa-history"></i></button>
+
+     
+      <!-- Notifications -->
+      <i class="bi bi-bell-fill"></i>
+        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+      </a>
+    </div>
+  </div>
+  <!-- Collapsible wrapper -->
+</div>
+<!-- Container wrapper -->
+</nav>
+</header>
+<!--Released date -->
+<section id="Released">
+  <!--dropdown------->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Released date
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item bg-light" href="#">2021 - 2024</a></li>
+        <li><a class="dropdown-item bg-light" href="#">2011 - 2020</a></li>
+        <li><a class="dropdown-item bg-light" href="#">2000 - 2010</a></li>
+      </ul>
+    </div>
+  <!--container-->
+  <div id="movieCards" class="movie-container">
+    <!-- movie-box------>
+    <div  id="movieEl" class="movie-box card">
+      <img src="./Assets/Image/harry-potter 1.webp" class="card-img-top" alt="Movie Poster">
+      <div class="card-body">
+        <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
+      </div>
+  </div>
+  <div  id="movieEl" class="movie-box card">
+    <img src="./Assets/Image/harry-potter 2.webp" class="card-img-top" alt="Movie Poster">
+    <div class="card-body">
+      <a href="/#"  id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
+    </div>
+</div>
+<div  id="movieEl" class="movie-box card">
+  <img src="./Assets/Image/harry potter 3.avif" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div  id="movieEl" class="movie-box card">
+  <img src="./Assets/Image/harry potter 4.avif" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div  id="movieEl" class="movie-box card">
+  <img src="./Assets/Image/harry-potter 5.avif" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div  id="movieEl" class="movie-box card">
+  <img src="./Assets/Image/harry poter img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+  </div>
+  </div>
+
+</section>
+<!--Main Actors-->
+<section id="Actors">
+  <!--heading------->
+    <div class="dropdown gap">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Main Actors
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item bg-light" href="#">Youtube</a></li>
+        <li><a class="dropdown-item bg-light" href="#">HBO</a></li>
+        <li><a class="dropdown-item bg-light" href="#">NetFlix</a></li>
+      </ul>
+    </div>
+  <!--container-->
+  <div id="actorsCards" class="movie-container">
+
+    <!--movie-box------>
+    <div id="" class="movie-box card">
+      <img src="./Assets/Image/spiderman img.jpg" class="card-img-top" alt="Movie Poster">
+      <div class="card-body">
+        <a href="#" id="submitBtn" class="btn btn-primary">Watch Now</a>
+      </div>
+  </div>
+  <div id="" class="movie-box card">
+    <img src="./Assets/Image/spiderman img.jpg" class="card-img-top" alt="Movie Poster">
+    <div class="card-body">
+      <a href="#" id="submitBtn" class="btn btn-primary">Watch Now</a>
+    </div>
+</div>
+<div id="" class="movie-box card">
+  <img src="./Assets/Image/spiderman img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" id="submitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div id="" class="movie-box card">
+  <img src="./Assets/Image/spiderman img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" id="submitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div id="" class="movie-box card">
+  <img src="./Assets/Image/spiderman img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" id="submitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div id="" class="movie-box card">
+  <img src="./Assets/Image/spiderman img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" id="submitBtn" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+  </div>
+
+</section>
+
+<!-- Genres-->
+<section id="Genre">
+  <!--heading------->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Genres
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item bg-light" href="#">comedy</a></li>
+        <li><a class="dropdown-item bg-light" href="#">Fiction</a></li>
+        <li><a class="dropdown-item bg-light" href="#">Anime</a></li>
+      </ul>
+    </div>
+  <!--container-->
+  <div id="genreCards" class="movie-container">
+
+    <!--movie-box------>
+    <div class="movie-box card">
+      <img src="./Assets/Image/shrek img.jpg" class="card-img-top" alt="Movie Poster">
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Watch Now</a>
+      </div>
+  </div>
+  <div class="movie-box card">
+    <img src="./Assets/Image/shrek img.jpg" class="card-img-top" alt="Movie Poster">
+    <div class="card-body">
+      <a href="#" class="btn btn-primary">Watch Now</a>
+    </div>
+</div>
+<div class="movie-box card">
+  <img src="./Assets/Image/shrek img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div class="movie-box card">
+  <img src="./Assets/Image/shrek img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div class="movie-box card">
+  <img src="./Assets/Image/shrek img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+<div class="movie-box card">
+  <img src="./Assets/Image/shrek img.jpg" class="card-img-top" alt="Movie Poster">
+  <div class="card-body">
+    <a href="#" class="btn btn-primary">Watch Now</a>
+  </div>
+</div>
+  </div>
+  </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>   
+ <script type="text/javascript" src="./Assets/Java/script.js"></script>
+    
+
+
+</body>
+</html>
+</section>
+ 
+    <script type="text/javascript" src="./Assets/Java/script.js"></script>
+  </body>
+</html>
+
