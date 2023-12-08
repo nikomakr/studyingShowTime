@@ -50,7 +50,7 @@ async function fetchMoviesMiniApi(movie_id) {
       console.log(data);
     });
 }
-searchForm.addEventListener("submit", function (event) {
+searchForm.addEventListener("submitBtn", function (event) {
   event.preventDefault();
   //   imdbApi();
   fetchStreamingApi();
