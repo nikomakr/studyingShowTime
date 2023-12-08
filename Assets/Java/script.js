@@ -1,5 +1,8 @@
 const searchForm = document.getElementById("searchForm");
 const searchedMovieInput = document.getElementById("searchedMovie");
+// const movieCards = document.getElementById("movieCards");
+
+
 async function fetchStreamingApi() {
   const url =
     "https://streaming-availability.p.rapidapi.com/search/title?title=" +
@@ -47,11 +50,79 @@ async function fetchMoviesMiniApi(movie_id) {
       console.log(data);
     });
 }
-searchForm.addEventListener("submit", function (event) {
+searchForm.addEventListener("submitBtn", function (event) {
   event.preventDefault();
   //   imdbApi();
   fetchStreamingApi();
 });
+
+// async function fetchMoviesYearMiniApi(year) {
+//   const moviesMiniUrl =
+//   `https://moviesminidatabase.p.rapidapi.com/movie/byYear/${year}/`;
+//   const moviesMiniOptions = {
+//     method: "GET",
+//     headers: {
+//       "X-RapidAPI-Key": "6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636",
+//       "X-RapidAPI-Host": "moviesminidatabase.p.rapidapi.com",
+//     },
+//   };
+//   fetch(moviesMiniUrl, moviesMiniOptions)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//     });
+// }
+// searchForm.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   //   imdbApi();
+//   fetchStreamingApi();
+// });
+
+
+// async function fetchMoviesYearMiniApi(year) {
+//   const moviesMiniUrl =
+//   `https://moviesminidatabase.p.rapidapi.com/movie/byYear/${year}/`;
+//   const moviesMiniOptions = {
+//     method: "GET",
+//     headers: {
+//       "X-RapidAPI-Key": "6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636",
+//       "X-RapidAPI-Host": "moviesminidatabase.p.rapidapi.com",
+//     },
+//   };
+
+//   try {
+//     const response = await fetch(moviesMiniUrl, moviesMiniOptions);
+//     const data = await response.json();
+//     console.log(data);
+
+//     // Create and append movie cards
+//     const movieCards = data.map(movie => createMovieCard(movie));
+//     document.getElementById("movieCards").innerHTML = movieCards.join('');
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // async function imdbApi() {
 //   const imdbUrl =
 //     "https://imdb188.p.rapidapi.com/api/v1/searchIMDB?query=" +

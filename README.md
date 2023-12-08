@@ -74,8 +74,11 @@ The above two are the two main goals we are looking forward to achieving.
 
 ## Server side APIs used:
 
-* Imdb Api documentation: https://developer.imdb.com/documentation/api-documentation/?ref_=/documentation/_PAGE_BODY
-* Utelly Api documentation: https://rapidapi.com/utelly/api/utelly
+* https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability
+'X-RapidAPI-Key': '6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636'
+
+* https://moviesminidatabase.p.rapidapi.com/movie/id/%7Bmovie_id%7D/cast/
+"X-RapidAPI-Key": "d707f85ea2msh17d19e6e6585a85p16d8c0jsn733b15f6fe05
 
 ### Credits
 
@@ -97,6 +100,8 @@ As a student of edX - Skills for life - skills bootcamps here: https://skillsfor
 The navbar code was sourced from https://mdbootstrap.com/docs/standard/navigation/navbar/
 
 Signup page sourced from https://getbootstrap.com/docs/5.3/forms/floating-labels/
+
+Icons library used from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_buttons)
 
 ### License
 
