@@ -1,146 +1,48 @@
-const searchForm = document.getElementById("searchForm");
-const searchedMovieInput = document.getElementById("searchedMovie");
-// const movieCards = document.getElementById("movieCards");
 
 
-async function fetchStreamingApi() {
-  const url =
-    "https://streaming-availability.p.rapidapi.com/search/title?title=" +
-    searchedMovieInput.value +
-    "&country=gb&show_type=all&output_language=en";
+function fetchApiData() {
+  let apiUrl = "https://moviesminidatabase.p.rapidapi.com/movie/byYear/2010/";
+
+    const options = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Key": "6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636",
+        "X-RapidAPI-Host": "moviesminidatabase.p.rapidapi.com",
+      },
+    };
+
+    // Fetching data from the API
+    fetch(apiUrl, options)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data);
+        //create cards
+        // Creating a movie container element
+        // const movieCards = document.getElementById("movieCards");
+        // Iterating over the movies in the fetched data
+      });
+};
+fetchApiData();
+
+function fetchMoviesImageApi(id) {
   const options = {
-    method: "GET",
+    method: 'GET',
     headers: {
-      "X-RapidAPI-Key": "6585cb907amshd32413c9b8e2af5p1ca7d2jsn15206a031fc3",
-      "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
-    },
-  };
-  try {
-    const response = await fetch(url, options);
-    const data = await response.json();
-    console.log(data);
-    let movieId;
-    for (let index = 0; index < data.result.length; index++) {
-      if (data.result[index].type === "movie") {
-        movieId = data.result[index].imdbId;
-        console.log(movieId);
-        break;
-      }
+      'X-RapidAPI-Key': 'c13ecf3598msh3c858de3366c876p1e7d06jsna348d6c32c03',
+      'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
     }
-    fetchMoviesMiniApi(movieId);
-  } catch (error) {
-    console.error(error);
-  }
-}
-async function fetchMoviesMiniApi(movie_id) {
-  const moviesMiniUrl =
-    "https://moviesminidatabase.p.rapidapi.com/movie/id/" + movie_id + "/cast/";
-  const moviesMiniOptions = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "d707f85ea2msh17d19e6e6585a85p16d8c0jsn733b15f6fe05",
-      "X-RapidAPI-Host": "moviesminidatabase.p.rapidapi.com",
-    },
   };
-  fetch(moviesMiniUrl, moviesMiniOptions)
+  const apiUrl = `https://imdb188.p.rapidapi.com/api/v1/searchIMDB?query=${id}`;
+  fetch(apiUrl, options)
     .then(function (response) {
       return response.json();
     })
-    .then(function (data) {
-      console.log(data);
+    .then(function (res) {
+      // const imageLink = res.data[0].image
+      // return imageLink
+      console.log(res);
     });
 }
-searchForm.addEventListener("submitBtn", function (event) {
-  event.preventDefault();
-  //   imdbApi();
-  fetchStreamingApi();
-});
-
-// async function fetchMoviesYearMiniApi(year) {
-//   const moviesMiniUrl =
-//   `https://moviesminidatabase.p.rapidapi.com/movie/byYear/${year}/`;
-//   const moviesMiniOptions = {
-//     method: "GET",
-//     headers: {
-//       "X-RapidAPI-Key": "6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636",
-//       "X-RapidAPI-Host": "moviesminidatabase.p.rapidapi.com",
-//     },
-//   };
-//   fetch(moviesMiniUrl, moviesMiniOptions)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//     });
-// }
-// searchForm.addEventListener("submit", function (event) {
-//   event.preventDefault();
-//   //   imdbApi();
-//   fetchStreamingApi();
-// });
-
-
-// async function fetchMoviesYearMiniApi(year) {
-//   const moviesMiniUrl =
-//   `https://moviesminidatabase.p.rapidapi.com/movie/byYear/${year}/`;
-//   const moviesMiniOptions = {
-//     method: "GET",
-//     headers: {
-//       "X-RapidAPI-Key": "6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636",
-//       "X-RapidAPI-Host": "moviesminidatabase.p.rapidapi.com",
-//     },
-//   };
-
-//   try {
-//     const response = await fetch(moviesMiniUrl, moviesMiniOptions);
-//     const data = await response.json();
-//     console.log(data);
-
-//     // Create and append movie cards
-//     const movieCards = data.map(movie => createMovieCard(movie));
-//     document.getElementById("movieCards").innerHTML = movieCards.join('');
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// async function imdbApi() {
-//   const imdbUrl =
-//     "https://imdb188.p.rapidapi.com/api/v1/searchIMDB?query=" +
-//     searchedMovieInput.value;
-//   const imdbOptions = {
-//     method: "GET",
-//     headers: {
-//       "X-RapidAPI-Key": "d707f85ea2msh17d19e6e6585a85p16d8c0jsn733b15f6fe05",
-//       "X-RapidAPI-Host": "imdb188.p.rapidapi.com",
-//     },
-//   };
-//   try {
-//     const response = await fetch(imdbUrl, imdbOptions);
-//     const data = await response.json();
-//     var movieId;
-//     // console.log(data);
-//     fetchMoviesMiniApi(data);
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
+fetchMoviesImageApi("tt1014759")
