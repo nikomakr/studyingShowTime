@@ -74,11 +74,12 @@ The above two are the two main goals we are looking forward to achieving.
 
 ## Server side APIs used:
 
-* https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability
-'X-RapidAPI-Key': '6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636'
+* 'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
+* 'X-RapidAPI-Key': 'c13ecf3598msh3c858de3366c876p1e7d06jsna348d6c32c03'
+            
+* 'X-RapidAPI-Host': 'moviesminidatabase.p.rapidapi.com'
+* 'X-RapidAPI-Key': '6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636'
 
-* https://moviesminidatabase.p.rapidapi.com/movie/id/%7Bmovie_id%7D/cast/
-"X-RapidAPI-Key": "d707f85ea2msh17d19e6e6585a85p16d8c0jsn733b15f6fe05
 
 ### Credits
 

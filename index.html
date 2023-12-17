@@ -53,9 +53,10 @@ cursor: pointer; }
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
         <form  class="d-flex" role="search" id="searchForm">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchedMovie">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
 
-          <button class="btn btn-outline-success bg-dark" type="submit" id="submitBtn" ><a href="./searchPage.html">Search</a></button>
+          <button class="btn btn-outline-success bg-dark" type="submit" id="submitBtn" >Search</button>
+          <p id="resultMessage"></p>
         </form>      
       </li>
     </ul>
@@ -238,6 +239,7 @@ cursor: pointer; }
 </section>
  
     <script type="text/javascript" src="./Assets/Java/script.js"></script>
+    <script type="text/javascript" src="./Assets/Java/search.js"></script>
   </body>
 </html>
 
