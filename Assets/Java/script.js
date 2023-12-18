@@ -1,8 +1,8 @@
+apiUrl = "https://moviesminidatabase.p.rapidapi.com/movie/byYear/2010/";
 
 
 function fetchApiData() {
-  let apiUrl = "https://moviesminidatabase.p.rapidapi.com/movie/byYear/2010/";
-
+ 
     const options = {
       method: "GET",
       headers: {
@@ -18,10 +18,13 @@ function fetchApiData() {
       })
       .then(function (data) {
         console.log(data);
-        //create cards
-        // Creating a movie container element
-        // const movieCards = document.getElementById("movieCards");
-        // Iterating over the movies in the fetched data
+        // fetchMoviesImageApi(data.results[0].imdb_id)
+        for (let i = 0;  i < 3; i++) {
+          const element = data.results[i];
+          console.log(element);
+          fetchMoviesImageApi(element.imdb_id)
+        }
+        
       });
 };
 fetchApiData();
@@ -30,7 +33,7 @@ function fetchMoviesImageApi(id) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'c13ecf3598msh3c858de3366c876p1e7d06jsna348d6c32c03',
+      'X-RapidAPI-Key': 'd956454c47mshf6a1fc0a5313e0bp10ac08jsncc84dbcc782b',
       'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
     }
   };
@@ -40,9 +43,23 @@ function fetchMoviesImageApi(id) {
       return response.json();
     })
     .then(function (res) {
-      // const imageLink = res.data[0].image
-      // return imageLink
       console.log(res);
+      const imageLink = res.data[0].image
+      //create cards
+        // Creating a movie container element
+        const movieCards = document.getElementById("movieCards");
+        // Iterating over the movies in the fetched data
+        const card = `<div id="${id}" class="movie-box card">
+        <img src="${imageLink}" class="card-img-top" alt="Movie Poster">
+        <div class="card-body">
+        <p class="card-title bg-light">${res.data[0].title}</p>
+          <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
+        </div>
+    </div>`
+
+   movieCards.innerHTML+=card
     });
 }
-fetchMoviesImageApi("tt1014759")
+
+
+
