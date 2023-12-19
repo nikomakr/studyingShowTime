@@ -1,6 +1,4 @@
 apiUrl = "https://moviesminidatabase.p.rapidapi.com/movie/byYear/2010/";
-
-
 function fetchApiData() {
  
     const options = {
@@ -22,14 +20,14 @@ function fetchApiData() {
         for (let i = 0;  i < 3; i++) {
           const element = data.results[i];
           console.log(element);
-          fetchMoviesImageApi(element.imdb_id)
+          fetchMoviesYearImageApi(element.imdb_id)
         }
         
       });
 };
 fetchApiData();
 
-function fetchMoviesImageApi(id) {
+function fetchMoviesYearImageApi(id) {
   const options = {
     method: 'GET',
     headers: {
