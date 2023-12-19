@@ -75,7 +75,7 @@ The above two are the two main goals we are looking forward to achieving.
 ## Server side APIs used:
 
 * 'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
-* 'X-RapidAPI-Key': 'c13ecf3598msh3c858de3366c876p1e7d06jsna348d6c32c03'
+* 'X-RapidAPI-Key': '486abaa088msh3e163fec6b2d7f5p104d18jsn35204f2ab3cb'
             
 * 'X-RapidAPI-Host': 'moviesminidatabase.p.rapidapi.com'
 * 'X-RapidAPI-Key': '6f2fe1757dmsh5e166be4bbf928fp16f27djsn4221c0b32636'

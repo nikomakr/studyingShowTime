@@ -33,7 +33,7 @@ function fetchMoviesImageApi(id) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'd956454c47mshf6a1fc0a5313e0bp10ac08jsncc84dbcc782b',
+      'X-RapidAPI-Key': '486abaa088msh3e163fec6b2d7f5p104d18jsn35204f2ab3cb',
       'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
     }
   };

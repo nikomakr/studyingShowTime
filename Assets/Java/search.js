@@ -46,7 +46,7 @@ async function getSearchImdb(result, searchInput) {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'c13ecf3598msh3c858de3366c876p1e7d06jsna348d6c32c03',
+            'X-RapidAPI-Key': '486abaa088msh3e163fec6b2d7f5p104d18jsn35204f2ab3cb',
             'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
         }
     };
