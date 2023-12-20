@@ -31,7 +31,7 @@ function fetchMoviesYearImageApi(id) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '5981d9998emshf856bd7143121d2p179d42jsnf566e4d82ac7',
+      'X-RapidAPI-Key': 'bf4b921a74msh519a5157c18694bp13de96jsnfbc883463bfe',
       'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
     }
   };
@@ -50,7 +50,7 @@ function fetchMoviesYearImageApi(id) {
         const card = `<div id="${id}" class="movie-box card">
         <img src="${imageLink}" class="card-img-top" alt="Movie Poster">
         <div class="card-body">
-        <p class="card-title bg-light">${res.data[0].title}</p>
+        <p class="card-title text-white">${res.data[0].title}</p>
           <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
         </div>
     </div>`
@@ -115,7 +115,7 @@ function fetchMoviesActorImageApi(id) {
         const cards = `<div id="${id}" class="movie-box card">
         <img src="${imageLink}" class="card-img-top" alt="Movie Poster">
         <div class="card-body">
-        <p class="card-title bg-light">${res.data[0].stars}</p>
+        <p class="card-title text-white">${res.data[0].stars}</p>
           <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
         </div>
     </div>`
@@ -158,7 +158,7 @@ function fetchMoviesActorImageApi(id) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '5981d9998emshf856bd7143121d2p179d42jsnf566e4d82ac7',
+      'X-RapidAPI-Key': 'bf4b921a74msh519a5157c18694bp13de96jsnfbc883463bfe',
       'X-RapidAPI-Host': 'imdb188.p.rapidapi.com'
     }
   };
@@ -177,7 +177,7 @@ function fetchMoviesActorImageApi(id) {
         const cards = `<div id="${id}" class="movie-box card">
         <img src="${imageLink}" class="card-img-top" alt="Movie Poster">
         <div class="card-body">
-        <p class="card-title bg-light">${res.data[0].stars}</p>
+        <p class="card-title text-white">${res.data[0].stars}</p>
           <a href="/#" id="releaseSubmitBtn" class="btn btn-primary">Watch Now</a>
         </div>
     </div>`
